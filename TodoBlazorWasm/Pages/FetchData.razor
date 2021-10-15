@@ -1,5 +1,7 @@
 ﻿@page "/fetchdata"
 @inject HttpClient Http
+<!--lesson 08: dat cung ten thi co the bo qua-->
+@*@inherits FetchData*@ 
 
 <h1>Weather forecast</h1>
 
@@ -34,7 +36,8 @@ else
     </table>
 }
 
-@code {
+<!--lesson 08-->
+@*@code {
     private WeatherForecast[] forecasts;
 
     protected override async Task OnInitializedAsync()
@@ -52,4 +55,4 @@ else
 
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
-}
+}*@
