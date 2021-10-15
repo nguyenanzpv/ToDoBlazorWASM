@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Components;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 
@@ -11,6 +13,9 @@ namespace TodoBlazorWasm.Pages
     //ten phai giong nhau
     public partial class FetchData
     {
+        [Inject]
+        private HttpClient Http { get; set; }
+
         private WeatherForecast[] forecasts;
 
         protected override async Task OnInitializedAsync()
