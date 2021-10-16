@@ -1,0 +1,11 @@
+﻿Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Tool
+Microsoft.EntityFrameworkCore.SQLSERVER
+Microsoft.EntityFrameworkCore.Design
+
+
+
+
+--Migration--
+Add-Migration initial
+update-database
