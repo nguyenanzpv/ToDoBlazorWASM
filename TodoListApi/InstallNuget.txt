@@ -2,6 +2,8 @@
 Microsoft.EntityFrameworkCore.Tool
 Microsoft.EntityFrameworkCore.SQLSERVER
 Microsoft.EntityFrameworkCore.Design
+Microsoft.AspNetCore.Identity
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
 
 
 
