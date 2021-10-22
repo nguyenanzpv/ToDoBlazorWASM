@@ -36,8 +36,8 @@ namespace TodoListApi.Data
                     Id = Guid.NewGuid(),
                     Name = "Same Task 1",
                     CreatedDate = DateTime.Now,
-                    Priority = Enums.Priority.High,
-                    Status = Enums.Status.New
+                    Priority = TodoList.Models.Enums.Priority.High,
+                    Status = TodoList.Models.Enums.Status.Open
                 }) ;
             }
 

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TodoList.Models;
 using TodoListApi.Data;
 
 namespace TodoListApi.Repositories
@@ -35,7 +36,7 @@ namespace TodoListApi.Repositories
 
         public async Task<IEnumerable<Entities.Task>> GetTaskList()
         {
-            return await _context.Tasks.ToListAsync();
+            return await _context.Tasks.Include(x => x.Assignee).ToListAsync();
         }
 
         public async Task<Entities.Task> UpdateTask(Entities.Task task)
